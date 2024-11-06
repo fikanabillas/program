@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Badminton Putri Cup</title>
+    <style>
+        /* CSS dasar untuk tata letak dan gaya */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Formulir Pendaftaran Badminton Putri Cup</h1>
+</header>
+
+<main class="container">
+    <h2>Isi Formulir Berikut</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan email" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" required>
+                <option value="">Pilih jenis kelamin</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Alamat</label>
+            <textarea id="address" rows="3" placeholder="Masukkan alamat" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="school">Sekolah</label>
+            <input type="text" id="school" placeholder="Masukkan nama sekolah" required>
+        </div>
+        <button type="submit">Kirim Pendaftaran</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Badminton Putri Cup</p>
+</footer>
+
+</body>
+</html>
